@@ -21,4 +21,7 @@ Route::group(['prefix' => 'v1'], function()
 {
     Route::get('dbtest', 'UserController@dbtest');
     Route::get('querybuildertest', 'UserController@querybuildertest');
+    Route::get('categories', 'CategoryController@getAllCategories');
+    Route::get('newcate', 'CategoryController@insertCategory');
+    Route::get('quicknewcate', 'CategoryController@onelineInsertCategory');
 });

@@ -13,16 +13,14 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        //Schema::disableForeignKeyConstraints();
         Schema::create('categories', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name')->unique();
-            $table->integer('parent_id')->unsigned();
+            $table->integer('parent_id')->unsigned()->nullable();
             $table->timestamps();
             $table->foreign('parent_id')->references('id')->on('categories');
         });
-        //Schema::enableForeignKeyConstraints();
     }
 
     /**
