@@ -26,6 +26,8 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
+app.use('/fonts', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/fonts')));
+app.use('/js', express.static(path.join(__dirname, 'node_modules/jquery/dist')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

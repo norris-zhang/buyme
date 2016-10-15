@@ -24,3 +24,43 @@
     min-height: 10px;
     max-height: 30px;
 }
+
+.logo {
+    background: url("../images/logo.svg");
+    background-size: 200px 100px;
+}
+.logo-main {
+    height: 100px;
+    width:200px;
+    float: left;
+}
+.search-container {
+    height: 100px;
+    margin-left: 200px;
+}
+.search-form {
+    width: 800px;
+    margin: 0 auto;
+}
+ul#categories {
+    background-color: #b61d1d;
+}
+ul#categories > li > a {
+    border-left: 1px solid #b61d1d;
+    border-top: 1px solid #b61d1d;
+    border-bottom: 1px solid #b61d1d;
+    color: #fff;
+    cursor: pointer;
+}
+ul#categories > li > a:hover {
+    background-color: #f7f7f7;
+    color: #b61d1d;
+}
+ul#categories > li > i {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 4px;
+    height: 14px;
+    font: 400 9px/14px consolas;
+}
